@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display weather information for selected city</title>
+    <script type="text/JavaScript" data-require="jquery@*" data-semver="2.1.4"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="resources/js/load_cities.js"></script>
+    <script src="resources/js/getweather_details.js"></script>
+</head>
+
+<body>
+ <p>Select the city to get weather information</p>
+ <!-- select box uses onchange event to callweatherAPI -->
+ <select id="cities" name="city" onchange=callWeatherAPI(this.value)>
+ </select>
+
+</body>
+
+</html>
